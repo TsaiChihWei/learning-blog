@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.wrap {
+    margin: 100px 0;
+}
+.container {
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    h1 {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        width: 400px;
+        padding: 15px;
+        background-color: #eee;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+    .txt {
+        column-count: 2;
+        column-gap: 460px;
+    }
+}

@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #546377;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: linear-gradient(9deg, #185a9d, #43cea2);
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 0px 4px #fff;
+          box-shadow: 0px 0px 0px 4px #fff;
+}
+
+.list li + li {
+  margin-left: 100px;
+}
+
+.list li .fas {
+  font-size: 50px;
+  margin-bottom: 6px;
+}
+
+.list li.active ~ li {
+  background-image: linear-gradient(9deg, #aaa, #999);
+}
+
+.list li + li::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  left: -100px;
+  background-color: #fff;
+}

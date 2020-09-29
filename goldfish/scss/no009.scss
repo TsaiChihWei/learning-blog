@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: #562870;
+}
+.wrap {
+    padding: 10px 0;
+    background-color: #ec008b;
+}
+.breadcrumb {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    li {
+        padding-left: 20px;
+    }
+    li + li::before {
+        content: '>';
+        color: #fff;
+        margin-right: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+            color: #ff0;
+        }
+    }
+}

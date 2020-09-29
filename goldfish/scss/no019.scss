@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: #edece1;
+}
+.wrap {
+    width: 960px;
+    margin: auto;
+}
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    li {
+        width: 50%;
+        position: relative;
+        padding-bottom: 50px;
+        &:nth-child(odd) {
+            padding-right: 100px;
+        }
+        &:nth-child(even) {
+            padding-left: 100px;
+            transform: translateY(50%);
+        }
+        &:nth-child(odd)::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background-color: #ccc;
+            z-index: -1;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #aaa;
+            border-radius: 50%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        &:nth-child(odd)::after {
+            right: 0;
+            transform: translateX(50%);
+        }
+        &:nth-child(even)::after {
+            left: 0;
+            transform: translateX(-50%);
+        }
+        &:nth-child(odd) h2::after {
+            right: 0;
+        }
+        &:nth-child(even) h2::after {
+            left: 0;
+
+        } 
+    }
+    a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid #aaa;
+        box-shadow: 3px 3px 5px #888;
+    }
+    a:hover {
+        background-color: #6fa5f6;
+        h2, p {
+            color: #fff;
+        }
+    }
+    h2 {
+        color: #333;
+        font-weight: 700;
+        &::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100px;
+            background-color: #ccc;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+    p {
+        color: #666; 
+        font-weight: 100;
+    }
+}

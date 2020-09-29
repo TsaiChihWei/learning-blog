@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.banner {
+  height: 700px;
+  background: url(/pics/no021-cat.jpeg) no-repeat center center/contain;
+}
+
+.section {
+  position: relative;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-shadow: 178px 0 0 30px #fff, 327px 34px 0 20px #fff, 480px 9px 0 60px #fff, 690px 71px 0 60px #fff, 880px 0 0 89px #fff, -178px 0 0 30px #fff, -327px 34px 0 20px #fff, -480px 9px 0 60px #fff, -690px 71px 0 60px #fff, -880px 0 0 89px #fff, -1100px 50px 0 89px #fff, 100px 0px 0 56px rgba(0, 0, 10, 0.5), 298px 10px 0 56px rgba(0, 0, 10, 0.5), 540px -40px 0 50px rgba(0, 0, 10, 0.5), 740px -30px 0 30px rgba(0, 0, 10, 0.5), 880px -100px 0 80px rgba(0, 0, 10, 0.5), 1000px 0px 0 80px rgba(0, 0, 10, 0.5), -60px 0px 0 56px rgba(0, 0, 10, 0.5), -298px 10px 0 56px rgba(0, 0, 10, 0.5), -540px -40px 0 50px rgba(0, 0, 10, 0.5), -740px -30px 0 30px rgba(0, 0, 10, 0.5), -780px -70px 0 80px rgba(0, 0, 10, 0.5), -1200px 0px 0 80px rgba(0, 0, 10, 0.5);
+          box-shadow: 178px 0 0 30px #fff, 327px 34px 0 20px #fff, 480px 9px 0 60px #fff, 690px 71px 0 60px #fff, 880px 0 0 89px #fff, -178px 0 0 30px #fff, -327px 34px 0 20px #fff, -480px 9px 0 60px #fff, -690px 71px 0 60px #fff, -880px 0 0 89px #fff, -1100px 50px 0 89px #fff, 100px 0px 0 56px rgba(0, 0, 10, 0.5), 298px 10px 0 56px rgba(0, 0, 10, 0.5), 540px -40px 0 50px rgba(0, 0, 10, 0.5), 740px -30px 0 30px rgba(0, 0, 10, 0.5), 880px -100px 0 80px rgba(0, 0, 10, 0.5), 1000px 0px 0 80px rgba(0, 0, 10, 0.5), -60px 0px 0 56px rgba(0, 0, 10, 0.5), -298px 10px 0 56px rgba(0, 0, 10, 0.5), -540px -40px 0 50px rgba(0, 0, 10, 0.5), -740px -30px 0 30px rgba(0, 0, 10, 0.5), -780px -70px 0 80px rgba(0, 0, 10, 0.5), -1200px 0px 0 80px rgba(0, 0, 10, 0.5);
+}
+
+.section::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.container .item {
+  width: 570px;
+  margin: 0 15px;
+}
+
+.container .item h2 {
+  margin-bottom: 1.3em;
+}
+
+.container .item p {
+  line-height: 1.7;
+  margin-bottom: 1.6em;
+}

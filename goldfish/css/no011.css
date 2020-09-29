@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: linear-gradient(-45deg, #fffaf0, #f8c3c1);
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  margin: 100px auto;
+  padding-top: 75px;
+}
+
+.item {
+  width: 370px;
+  margin: 0 15px;
+  text-align: center;
+  border: 10px solid #f9cec2;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 20px 50px #f7b6a7;
+          box-shadow: 10px 20px 50px #f7b6a7;
+}
+
+.item h3 {
+  color: #f5afac;
+}
+
+.item p {
+  color: #ccc;
+}
+
+.item .icon {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  margin: -75px auto 0;
+  position: relative;
+  background-color: #fff;
+  font-size: 85px;
+  line-height: 150px;
+  border-radius: 50%;
+  color: #f5afac;
+}
+
+.item .icon::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-top: 10px solid #f9cec2;
+  border-right: 10px solid #f9cec2;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  top: -10px;
+  left: -10px;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.item .txt {
+  padding: 20px;
+}
+
+.item:hover i {
+  -webkit-animation: shake .5s linear infinite alternate;
+          animation: shake .5s linear infinite alternate;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}

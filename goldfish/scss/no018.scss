@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialogue {
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 10px #3e92cc;
+    background-color: #f4f5f7;
+}
+
+.user {
+    display: flex;
+    margin-bottom: 20px;
+}
+.avatar {
+    width: 60px;
+    text-align: center;
+    flex-shrink: 0;
+    .pic {
+        width: 60px;
+        height: 60px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+.txt {
+    padding: 16px;
+    border-radius: 10px;
+    position: relative;
+    align-self: center;
+}
+
+.remote .txt {
+    margin-left: 20px;
+    margin-right: 80px;
+    background-color: #fff;
+}
+
+.local {
+    justify-content: flex-end;
+}
+.local .txt {
+    margin-right: 20px;
+    margin-left: 80px;
+    order: -1;
+    background-color: #3e92cc;
+}
+
+.remote .txt::before {
+    content: '';
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-right: 15px solid #fff;
+    border-bottom: 10px solid transparent;
+    top: 10px;
+    left: -10px;
+}
+
+.local .txt::before {
+    content: '';
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-left: 15px solid #3e92cc;
+    border-bottom: 10px solid transparent;
+    top: 10px;
+    right: -10px;
+}

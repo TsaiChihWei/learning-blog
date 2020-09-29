@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(/pics/no017forBackground.jpeg) no-repeat center center/cover;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 10px solid #fff;
+  -webkit-box-shadow: 0 0 60px #000;
+          box-shadow: 0 0 60px #000;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.form {
+  color: #fff;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+
+.form .group {
+  margin-bottom: 10px;
+}
+
+.form label {
+  line-height: 2;
+}
+
+.form input {
+  width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  line-height: 2;
+}
+
+.btn-group {
+  margin-top: 50px;
+  font-size: 0;
+}
+
+.forget-password {
+  text-align: right;
+}
+
+.forget-password a {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.btn {
+  width: 190px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #6ab4fe;
+}
+
+.btn + .btn {
+  margin-left: 20px;
+}

@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  width: 960px;
+  margin: auto;
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrap li {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 60px -40px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 30px;
+}
+
+.wrap li:nth-child(n+4) {
+  left: 160px;
+}
+
+.wrap li:nth-child(n+7) {
+  left: 0px;
+}
+
+.wrap li::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: -1;
+}
+
+.box1::before {
+  background-color: #3ed0cd;
+}
+
+.box2::before {
+  background-color: #b2e086;
+}
+
+.box3::before {
+  background-color: #ef8899;
+}
+
+.box4::before {
+  background-color: #fc7b51;
+}
+
+.box5::before {
+  background-color: #2fccf9;
+}
+
+.box6::before {
+  background-color: #5f539b;
+}
+
+.box7::before {
+  background-color: #fce920;
+}
+
+.box8::before {
+  background-color: #7cc85c;
+}
+
+.box9::before {
+  background-color: #ffa55e;
+}
+
+li:hover::before {
+  background-color: #000;
+}
+
+li:hover {
+  color: #fff;
+}

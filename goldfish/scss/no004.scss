@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 100px 0;
+}
+
+.wrap {
+    width: 1200px;
+    margin: auto;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    .pic {
+        width: 55%;
+        flex-shrink: 0;
+        img {
+            width: 100%;
+            vertical-align: bottom;
+        }
+    }
+    .txt {
+        width: 55%;
+        background-color: #fa8;
+        flex-shrink: 0;
+        padding: 50px 30px;
+        z-index: 1;
+    }
+}
+
+.item > :first-child {
+    margin-right: -10%;
+}
+

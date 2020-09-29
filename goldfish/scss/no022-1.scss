@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    padding: 100px 0;
+    display: flex;
+    h1 {
+        width: 400px;
+        text-align: right;
+        padding: 20px 15px 0;
+        font-size: 25px;
+        background-color: #d5c7b9;
+        &::after {
+            content: '';
+            display: block;
+            width: 4em;
+            height: 4px;
+            margin-left: auto;
+            border-bottom: 2px solid #000;
+        }
+    }
+    .txt {
+        width: 800px;
+        padding: 0 15px 0 30px;
+        column-count: 2;
+        column-gap: 15px;
+    }
+}
