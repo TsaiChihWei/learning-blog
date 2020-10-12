@@ -61,9 +61,7 @@
 /* 利用 border-bottom 屬性製造一條線 */
 .txt h2::after {
   content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  display: block;
   width: 0%;
   border-bottom: 2px solid #ff0;
   transition: width .5s .5s; /* 這裡前面的 0.5s 是指持續時間，後面的 0.5s 是指延遲 0.5s */
